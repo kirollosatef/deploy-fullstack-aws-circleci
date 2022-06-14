@@ -19,26 +19,22 @@ jobs:
       - run:
           name: Install Front-End Dependencies
           command: |
-            echo "NODE --version" 
-            echo $(node --version)
-            echo "NPM --version" 
-            echo $(npm --version)
             npm run frontend:install
       # Install dependencies in the the backend API
       - run:
           name: Install API Dependencies
           command: |
             npm run api:install
-      # Lint the frontend
-      - run:
-          name: Front-End Lint
-          command: |
-            npm run frontend:lint
       # Build the frontend app
       - run:
           name: Front-End Build
           command: |
             npm run frontend:build
+      # Lint the frontend
+      - run:
+          name: Front-End Lint
+          command: |
+            npm run frontend:lint
       # Build the backend API
       - run:
           name: API Build
@@ -58,10 +54,6 @@ jobs:
       - run:
           name: Install Front-End Dependencies
           command: |
-            echo "NODE --version" 
-            echo $(node --version)
-            echo "NPM --version" 
-            echo $(npm --version)
             npm run frontend:install
       - run:
           name: Install API Dependencies
