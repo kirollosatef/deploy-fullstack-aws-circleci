@@ -30,6 +30,11 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
+      # e2e the frontend
+      - run:
+          name: Front-End E2E
+          command: |
+            npm run frontend:e2e
       # Lint the frontend
       - run:
           name: Front-End Lint
