@@ -13,7 +13,7 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15'
+          node-version: "14.15"
       - checkout
       # Use root level package.json to install dependencies in the frontend app
       - run:
@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Install API Dependencies
           command: |
-          npm run api:install
+            npm run api:install
       # Lint the frontend
       - run:
           name: Front-End Lint
@@ -39,7 +39,7 @@ jobs:
           name: Front-End Build
           command: |
             npm run frontend:build
-      # Build the backend API      
+      # Build the backend API
       - run:
           name: API Build
           command: |
@@ -51,7 +51,7 @@ jobs:
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
-          node-version: '14.15' 
+          node-version: "14.15"
       - eb/setup
       - aws-cli/setup
       - checkout
