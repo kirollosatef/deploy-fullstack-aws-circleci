@@ -19,6 +19,7 @@ jobs:
       - run:
           name: Install Front-End Dependencies
           command: |
+            npm install -g @angular/cli
             npm run frontend:install
       # Install dependencies in the the backend API
       - run:
@@ -36,10 +37,10 @@ jobs:
       #     command: |
       #       npm run frontend:e2e
       # # Lint the frontend
-      # - run:
-      #     name: Front-End Lint
-      #     command: |
-      #       npm run frontend:lint
+      - run:
+          name: Front-End Lint
+          command: |
+            npm run frontend:lint
       # #Test the frontend
       # - run:
       #     name: Front-End Test
