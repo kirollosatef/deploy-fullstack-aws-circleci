@@ -40,11 +40,11 @@ jobs:
       #     name: Front-End Lint
       #     command: |
       #       npm run frontend:lint
-      #Test the frontend
-      - run:
-          name: Front-End Test
-          command: |
-            npm run frontend:test
+      # #Test the frontend
+      # - run:
+      #     name: Front-End Test
+      #     command: |
+      #       npm run frontend:test
       # Build the backend API
       - run:
           name: API Build
