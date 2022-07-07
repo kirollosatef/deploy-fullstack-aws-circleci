@@ -83,3 +83,5 @@ workflows:
           requires:
             - build
       - deploy:
+          requires:
+            - hold
