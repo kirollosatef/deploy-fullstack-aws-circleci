@@ -1,6 +1,6 @@
 # Hosting a Full-Stack Application
 
-- Applications that are built on top of a full stack called Udagram [Link](http://deploy-fullstack-aws-circleci.s3-website-us-east-1.amazonaws.com/)
+- Applications that are built on top of a full stack called Udagram [Link](http://deploy-rds-s3-eb-1234.s3-website-us-east-1.amazonaws.com/)
 
 - documentation: [here](doc/README.md)
 
